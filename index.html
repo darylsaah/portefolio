@@ -1,258 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr-CA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio professionnel de Daryl Saah, finissant DEC en technique de l'informatique - programmation et nouveaux médias."
+      content="Portfolio de Daryl Saah — finissant en technologies de l'information, développement web (React, Node.js), API REST et bases de données."
     />
     <meta name="theme-color" content="#070b18" />
     <meta property="og:title" content="Daryl Saah | Portfolio" />
     <meta
       property="og:description"
-      content="Portfolio professionnel de Daryl Saah, finissant DEC en technique de l'informatique - programmation et nouveaux médias."
+      content="Portfolio de Daryl Saah — développement web, applications et projets concrets (React, Node.js, MySQL)."
     />
     <meta property="og:type" content="website" />
-    <title>Daryl Saah | Développeur Junior TI</title>
+    <title>Daryl Saah | Développeur web junior</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-decoration"></div>
-    <a class="skip-link" href="#accueil">Aller au contenu</a>
-    <header class="header">
-      <nav class="container nav">
-        <a href="#accueil" class="logo">Daryl<span>Saah</span></a>
-        <button
-          id="lang-toggle"
-          class="lang-toggle"
-          type="button"
-          aria-label="Switch language"
-        >
-          EN
-        </button>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Ouvrir le menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-        <ul class="nav-links">
-          <li><a href="#profil" data-i18n="nav_profile">Profil</a></li>
-          <li><a href="#competences" data-i18n="nav_skills">Compétences</a></li>
-          <li><a href="#projets" data-i18n="nav_projects">Projets</a></li>
-          <li><a href="#formation" data-i18n="nav_education">Formation</a></li>
-          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="accueil">
-      <section class="hero container">
-        <div class="hero-main">
-          <p class="badge" data-i18n="badge">Disponible pour un stage ou emploi junior</p>
-          <h1>
-            <span data-i18n="hero_title_1">Finissant DEC en technique de l'informatique</span><br />
-            <span data-i18n="hero_title_2">Programmation et nouveaux médias</span>
-          </h1>
-          <p class="hero-text" data-i18n="hero_text">
-            Développeur polyvalent orienté résultats, j'allie programmation,
-            réseaux et administration système pour concevoir des solutions
-            robustes et performantes. On apprécie particulièrement mon autonomie,
-            ma rigueur et ma capacité à communiquer clairement.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact" data-i18n="cta_contact">Me contacter</a>
-            <a class="btn ghost" href="./Daryl-Saah-CV.pdf" download
-              data-i18n="cta_cv">Télécharger mon CV</a
-            >
-          </div>
-        </div>
-        <aside class="hero-card">
-          <h2>Daryl Saah</h2>
-          <p class="role" data-i18n="role">Développeur Junior TI</p>
-          <ul class="quick-info">
-            <li>Montreal, Quebec</li>
-            <li>514 448-5655</li>
-            <li>darylsaah@icloud.com</li>
-          </ul>
-          <div class="hero-stats">
-            <article>
-              <strong>4+</strong>
-              <span data-i18n="stat_projects">projets techniques</span>
-            </article>
-            <article>
-              <strong>24/7</strong>
-              <span data-i18n="stat_ops">vision production</span>
-            </article>
-          </div>
-        </aside>
-      </section>
-
-      <section id="profil" class="section container reveal">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="profile_eyebrow">PROFIL</p>
-          <h2 data-i18n="profile_title">Un profil polyvalent en développement et infrastructure</h2>
-        </div>
-        <div class="grid two">
-          <article class="card">
-            <h3 data-i18n="profile_card1_title">Forces professionnelles</h3>
-            <p data-i18n="profile_card1_text">
-              Leadership, forte capacité d'analyse, sens de l'organisation et
-              apprentissage rapide. J'aime transformer des besoins techniques en
-              solutions concrètes et compréhensibles.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="profile_card2_title">Valeur ajoutée</h3>
-            <p data-i18n="profile_card2_text">
-              Maîtrise du cycle complet de développement logiciel, de
-              l'identification des besoins jusqu'aux tests, au déploiement et au
-              support post-livraison.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="competences" class="section container reveal">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="skills_eyebrow">COMPETENCES</p>
-          <h2 data-i18n="skills_title">Expertises techniques</h2>
-        </div>
-        <div class="grid three">
-          <article class="card feature-card">
-            <h3 data-i18n="skills_card1_title">Programmation</h3>
-            <p data-i18n="skills_card1_text">Java, PHP, C#, SQL, JSP/Servlet, concepts .NET.</p>
-          </article>
-          <article class="card feature-card">
-            <h3 data-i18n="skills_card2_title">Systèmes et réseaux</h3>
-            <p data-i18n="skills_card2_text">Linux/Unix, TCP/IP, VLAN, VPN, ACL, administration serveurs.</p>
-          </article>
-          <article class="card feature-card">
-            <h3 data-i18n="skills_card3_title">Données et opérations</h3>
-            <p data-i18n="skills_card3_text">
-              Oracle, MySQL, SQL Server, scripts Shell, gestion d'incidents,
-              documentation technique.
-            </p>
-          </article>
-        </div>
-        <div class="tag-list">
-          <span>UML</span><span>VirtualBox</span><span>VMware</span
-          ><span>Eclipse</span><span>JDeveloper</span><span>VoIP</span
-          ><span>LDAP</span><span>Maintenance applicative</span>
-        </div>
-      </section>
-
-      <section id="projets" class="section container reveal">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="projects_eyebrow">PROJETS</p>
-          <h2 data-i18n="projects_title">Réalisations académiques</h2>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3 data-i18n="project1_title">Infrastructure réseau local</h3>
-            <p data-i18n="project1_text">
-              Conception d'un LAN segmenté par VLAN avec adressage IP,
-              connectivité inter-équipements et règles de sécurité.
-            </p>
-            <ul>
-              <li>Architecture réseau</li>
-              <li>Sécurité de base</li>
-              <li>Validation technique</li>
-            </ul>
-          </article>
-          <article class="project-card">
-            <h3 data-i18n="project2_title">Administration Linux</h3>
-            <p data-i18n="project2_text">
-              Configuration de serveurs Linux, gestion utilisateurs, scripts
-              d'automatisation et supervision d'incidents.
-            </p>
-            <ul>
-              <li>Linux</li>
-              <li>Shell scripting</li>
-              <li>Monitoring</li>
-            </ul>
-          </article>
-          <article class="project-card">
-            <h3 data-i18n="project3_title">Application + base de données</h3>
-            <p data-i18n="project3_text">
-              Développement d'une application connectée à MySQL/Oracle avec
-              scénarios de test et validation fonctionnelle.
-            </p>
-            <ul>
-              <li>SQL</li>
-              <li>Back-end logique</li>
-              <li>Tests</li>
-            </ul>
-          </article>
-          <article class="project-card">
-            <h3 data-i18n="project4_title">Environnement virtualisé</h3>
-            <p data-i18n="project4_text">
-              Mise en place d'une architecture serveur-clients sous VirtualBox
-              avec procédures de sauvegarde/restauration.
-            </p>
-            <ul>
-              <li>Virtualisation</li>
-              <li>Simulation entreprise</li>
-              <li>Continuité de service</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="formation" class="section container reveal">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="education_eyebrow">FORMATION</p>
-          <h2 data-i18n="education_title">Parcours académique</h2>
-        </div>
-        <div class="education-list">
-          <article class="edu-item">
-            <h3 data-i18n="edu1_title">DEC en technologies de l'information (en cours)</h3>
-            <p>Institut Grasset - Montreal</p>
-            <p data-i18n="edu1_text">Spécialité: gestion des technologies de l'information.</p>
-          </article>
-          <article class="edu-item">
-            <h3 data-i18n="edu2_title">Baccalauréat (DES) scientifique de l'information</h3>
-            <p>2022 - 2024</p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer reveal">
-      <div class="container footer-grid">
-        <div>
-          <p class="eyebrow" data-i18n="contact_eyebrow">CONTACT</p>
-          <h2 data-i18n="contact_title">Construisons votre prochain projet</h2>
-          <p class="muted" data-i18n="contact_text">
-            Je suis ouvert aux opportunités de stage et aux postes juniors en
-            développement logiciel / support applicatif.
-          </p>
-          <p><a href="mailto:darylsaah@icloud.com">darylsaah@icloud.com</a></p>
-          <p><a href="tel:+15144485655">514 448-5655</a></p>
-        </div>
-        <form class="contact-form" id="direct-email-form">
-          <label for="name" data-i18n="form_name">Nom</label>
-          <input id="name" type="text" placeholder="Votre nom" data-i18n-placeholder="form_name_ph" />
-          <label for="email" data-i18n="form_email">Email</label>
-          <input id="email" type="email" placeholder="votre@email.com" data-i18n-placeholder="form_email_ph" />
-          <label for="message" data-i18n="form_message">Message</label>
-          <textarea id="message" rows="4" placeholder="Votre message" data-i18n-placeholder="form_message_ph"></textarea>
-          <button class="btn primary" type="submit" data-i18n="form_send">Envoyer</button>
-          <small data-i18n="form_note">Envoi direct vers votre application email.</small>
-        </form>
-      </div>
-      <p class="copyright">© <span id="year"></span> Daryl Saah</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
